@@ -10,6 +10,7 @@
 #import "SecondViewController.h"
 #import "THTrip.h"
 #import "ASIHTTPRequest.h"
+#import "CJSONDeserializer.h"
 
 @interface FirstViewController : UIViewController <ASIHTTPRequestDelegate>
 {

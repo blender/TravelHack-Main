@@ -109,7 +109,7 @@
 - (IBAction)grabURLInBackground:(id)sender
 {
    
-    NSString *urlString = [NSString stringWithFormat:@"http://aliavi.com/Ali/json_test.php?userid=alialavi@gmail.com&fromlong=%f&tolong=%f&fromlat=%f&tolat=%f&fromtime=2011-10-0820:00:00&totime=2011-10-0823:00:00&exptime=2011-10-0819:30:00", trip.fromCoordinates.latitude, trip.toCoordinates.longitude, trip.fromCoordinates.latitude, trip.toCoordinates.latitude];
+    NSString *urlString = [NSString stringWithFormat:@"http://aliavi.com/proc.php?form=searchride&fromlang=%f&fromlat=%f&fdate=14&fhour=12&fmin=12&&tolang=%f&tolat=%f&&tdate=14&thour=12&tmin=12&output=json", trip.fromCoordinates.longitude, trip.fromCoordinates.latitude, trip.toCoordinates.longitude, trip.toCoordinates.latitude];
     
     //NSLog(urlString);
     
@@ -123,7 +123,20 @@
 {
     // Use when fetching text data
     NSString *responseString = [request responseString];
-    NSLog(responseString);
+    
+    NSString *jsonString = responseString;
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error = nil;
+    NSDictionary *dictionary = [[CJSONDeserializer deserializer] deserializeAsDictionary:jsonData error:&error];
+    
+    if(error != nil){
+    
+        NSLog([error description]);
+    
+    }
+    
+    
+    NSLog([dictionary description]);
     
 }
 

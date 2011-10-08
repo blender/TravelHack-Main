@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8A06B39114404F9200666433 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A06B39014404F9200666433 /* FirstViewController.m */; };
+		8A1FE82C1440D79A00D91805 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE8261440D79A00D91805 /* CJSONDeserializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8A1FE82D1440D79A00D91805 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE8281440D79A00D91805 /* CJSONScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8A1FE82E1440D79A00D91805 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE82A1440D79A00D91805 /* CJSONSerializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8A1FE8311440D89E00D91805 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE8301440D89E00D91805 /* CDataScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8A1FE8361440D8E700D91805 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE8331440D8E700D91805 /* CDataScanner_Extensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8A1FE8371440D8E700D91805 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE8351440D8E700D91805 /* NSDictionary_JSONExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8A4DE3CD1440678700892BB9 /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4DE3CC1440678700892BB9 /* 53-house.png */; };
 		8A577BA81440C82300527FEF /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A577B991440C82300527FEF /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8A577BA91440C82300527FEF /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A577B9C1440C82300527FEF /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -46,6 +52,19 @@
 /* Begin PBXFileReference section */
 		8A06B38F14404F9200666433 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		8A06B39014404F9200666433 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		8A1FE8251440D79A00D91805 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		8A1FE8261440D79A00D91805 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		8A1FE8271440D79A00D91805 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
+		8A1FE8281440D79A00D91805 /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
+		8A1FE8291440D79A00D91805 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		8A1FE82A1440D79A00D91805 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		8A1FE82B1440D79A00D91805 /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
+		8A1FE82F1440D89E00D91805 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
+		8A1FE8301440D89E00D91805 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
+		8A1FE8321440D8E700D91805 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		8A1FE8331440D8E700D91805 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		8A1FE8341440D8E700D91805 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		8A1FE8351440D8E700D91805 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
 		8A4DE3CC1440678700892BB9 /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
 		8A577B981440C82300527FEF /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = TravelHack/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		8A577B991440C82300527FEF /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = TravelHack/ASIAuthenticationDialog.m; sourceTree = "<group>"; };
@@ -124,6 +143,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A1FE8231440D78C00D91805 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				8A1FE8321440D8E700D91805 /* CDataScanner_Extensions.h */,
+				8A1FE8331440D8E700D91805 /* CDataScanner_Extensions.m */,
+				8A1FE8341440D8E700D91805 /* NSDictionary_JSONExtensions.h */,
+				8A1FE8351440D8E700D91805 /* NSDictionary_JSONExtensions.m */,
+				8A1FE82F1440D89E00D91805 /* CDataScanner.h */,
+				8A1FE8301440D89E00D91805 /* CDataScanner.m */,
+				8A1FE8251440D79A00D91805 /* CJSONDeserializer.h */,
+				8A1FE8261440D79A00D91805 /* CJSONDeserializer.m */,
+				8A1FE8271440D79A00D91805 /* CJSONScanner.h */,
+				8A1FE8281440D79A00D91805 /* CJSONScanner.m */,
+				8A1FE8291440D79A00D91805 /* CJSONSerializer.h */,
+				8A1FE82A1440D79A00D91805 /* CJSONSerializer.m */,
+				8A1FE82B1440D79A00D91805 /* JSONRepresentation.h */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
 		8A81C1641440C50F00834776 /* ASIHTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +257,7 @@
 		8AE8BFD3143A0BDA00133593 /* TravelHack */ = {
 			isa = PBXGroup;
 			children = (
+				8A1FE8231440D78C00D91805 /* JSON */,
 				8A81C1641440C50F00834776 /* ASIHTTPRequest */,
 				8AB659601440B67F007345ED /* Reachability */,
 				8AE8C025143A3D9C00133593 /* Assets */,
@@ -345,6 +385,12 @@
 				8A577BAD1440C82300527FEF /* ASIHTTPRequest.m in Sources */,
 				8A577BB21440C89600527FEF /* ASIInputStream.m in Sources */,
 				8A577BB31440C89600527FEF /* ASINetworkQueue.m in Sources */,
+				8A1FE82C1440D79A00D91805 /* CJSONDeserializer.m in Sources */,
+				8A1FE82D1440D79A00D91805 /* CJSONScanner.m in Sources */,
+				8A1FE82E1440D79A00D91805 /* CJSONSerializer.m in Sources */,
+				8A1FE8311440D89E00D91805 /* CDataScanner.m in Sources */,
+				8A1FE8361440D8E700D91805 /* CDataScanner_Extensions.m in Sources */,
+				8A1FE8371440D8E700D91805 /* NSDictionary_JSONExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
