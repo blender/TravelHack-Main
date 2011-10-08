@@ -1,0 +1,66 @@
+Code Monkyes TravelHack Repo!
+
+
+                      __,__
+             .--.  .-"     "-.  .--.
+            / .. \/  .-. .-.  \/ .. \
+           | |  '|  /   Y   \  |'  | |
+           | \   \  \ 0 | 0 /  /   / |
+            \ '- ,\.-"`` ``"-./, -' /
+             `'-' /_   ^ ^   _\ '-'`
+             .--'|  \._ _ _./  |'--.
+           /`    \   \.-.  /   /    `\
+          /       '._/  |-' _.'       \
+         /          ;  /--~'   |       \
+        /        .'\|.-\--.     \       \
+       /   .'-. /.-.;\  |\|'~'-.|\       \
+       \       `-./`|_\_/ `     `\'.      \
+        '.      ;     ___)        '.`;    /
+          '-.,_ ;     ___)          \/   /
+           \   ``'------'\       \   `  /
+            '.    \       '.      |   ;/_
+          ___>     '.       \_ _ _/   ,  '--.
+        .'   '.   .-~~~~~-. /     |--'`~~-.  \
+       // / .---'/  .-~~-._/ / / /---..__.'  /
+      ((_(_/    /  /      (_(_(_(---.__    .'
+                | |     _              `~~`
+                | |     \'.
+                 \ '....' |
+                  '.,___.'
+
+Instructions for submitting the contributions in TravelHack2011
+ 
+What should be submitted?
+ 
+The contribution that the teams should submit consists of three components.
+ 
+The first component is a brief description of the functionality in the prototype. Use the following building blocks to compose the description:
+ 
+·      Team data: team name and team members
+·      Short description of the service
+o   In simple word describe the service that have been developed and also state the value with the service.
+·      Background and vision with the service
+o   Briefly describe the background to the service and why you choose to develop the service.
+o   Briefly describe which sustainable vision you have anchored you service in and why.
+·      Objectives and target group with the service
+o   Based in the user personas briefly describe the objective with the service and the target group for the service.
+·      Description of the functionality
+o   Lead the reader through the functionality of the service; if needed use sub-headers to organize the description. It is also valuable if you match this text to the screen shots that you also should submit as part of the contribution.
+·      API’s and Data sources
+o   State which APIs and data sources that you have used in order to create the service
+·      Contribution to the Developer Recognition Award (if the team competes in this award)
+o   If you choose to be a part in the this award state ideas:
+§  That you have identified during the 24H that would have improved your development
+§  That could be code libraries, code examples, example applications etc. Note, that these facilitating resources must be pubblically available on for example trafiklab.se or GitHub. Refer to these examples in this section.
+·      Self-estimation of the status of service completeness.
+o   How complete is the service? Estimate the work that must be put into the service in order to test it for users: X hours. Please note that a finished service that is boring is not better than an innovative service that only is half finished.
+·      Business Model Canvas
+o   The link to the teams Business Model Canvas
+·      References to parts in the prototype which has another source than TravelHack 2011
+o   Describe if the service is based on / used any previously published components / parts / aspects. References are given to these existing components / parts / aspects.
+ 
+The second component in the contribution is Screen Shots that describes the service. The third component is the Business Model Canvas (which should be linked from the description of the functionality). The link below should be used to find the teams specific Business Model Canvas (each team have a specific canvas). During the competition you will receive information how the canvas works:
+
+see link in swedish mail.
+ 
+
