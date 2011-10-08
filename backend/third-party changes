@@ -1,0 +1,15 @@
+	function getJSFiles() {
+		return array(
+			$this->form->getResourcesPath() . "/tiny_mce/tiny_mce.js"
+		);
+	}
+
+
+to 
+
+
+	function getJSFiles() {
+		return array(
+			"/../../".$this->form->getResourcesPath() . "/tiny_mce/tiny_mce.js"
+		);
+	}
