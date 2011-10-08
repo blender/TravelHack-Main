@@ -14,6 +14,9 @@
 		8A1FE8311440D89E00D91805 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE8301440D89E00D91805 /* CDataScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8A1FE8361440D8E700D91805 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE8331440D8E700D91805 /* CDataScanner_Extensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8A1FE8371440D8E700D91805 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE8351440D8E700D91805 /* NSDictionary_JSONExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8A1FE83B1440DDC400D91805 /* RideListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE8391440DDC400D91805 /* RideListViewController.m */; };
+		8A1FE83C1440DDC400D91805 /* RideListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FE83A1440DDC400D91805 /* RideListViewController.xib */; };
+		8A1FE83F1440E0C200D91805 /* Ride.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE83E1440E0C200D91805 /* Ride.m */; };
 		8A4DE3CD1440678700892BB9 /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4DE3CC1440678700892BB9 /* 53-house.png */; };
 		8A577BA81440C82300527FEF /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A577B991440C82300527FEF /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8A577BA91440C82300527FEF /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A577B9C1440C82300527FEF /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -65,6 +68,11 @@
 		8A1FE8331440D8E700D91805 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
 		8A1FE8341440D8E700D91805 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
 		8A1FE8351440D8E700D91805 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		8A1FE8381440DDC400D91805 /* RideListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RideListViewController.h; sourceTree = "<group>"; };
+		8A1FE8391440DDC400D91805 /* RideListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RideListViewController.m; sourceTree = "<group>"; };
+		8A1FE83A1440DDC400D91805 /* RideListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RideListViewController.xib; sourceTree = "<group>"; };
+		8A1FE83D1440E0C200D91805 /* Ride.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ride.h; sourceTree = "<group>"; };
+		8A1FE83E1440E0C200D91805 /* Ride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ride.m; sourceTree = "<group>"; };
 		8A4DE3CC1440678700892BB9 /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
 		8A577B981440C82300527FEF /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = TravelHack/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		8A577B991440C82300527FEF /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = TravelHack/ASIAuthenticationDialog.m; sourceTree = "<group>"; };
@@ -214,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				8AE8C017143A147A00133593 /* FirstViewController.xib */,
+				8A1FE83A1440DDC400D91805 /* RideListViewController.xib */,
 				8AE8C020143A3BEF00133593 /* SecondViewController.xib */,
 				8ACD537A143F2E1300900A3F /* CellView.xib */,
 			);
@@ -275,6 +284,10 @@
 				8AB6592714406B45007345ED /* LocationController.m */,
 				8ACD5370143F076C00900A3F /* WhenViewController.h */,
 				8ACD5371143F076C00900A3F /* WhenViewController.m */,
+				8A1FE8381440DDC400D91805 /* RideListViewController.h */,
+				8A1FE8391440DDC400D91805 /* RideListViewController.m */,
+				8A1FE83D1440E0C200D91805 /* Ride.h */,
+				8A1FE83E1440E0C200D91805 /* Ride.m */,
 				8AE8BFD4143A0BDA00133593 /* Supporting Files */,
 			);
 			path = TravelHack;
@@ -358,6 +371,7 @@
 				8AD6EC04143C8A1400DA3084 /* 03-loopback_v.png in Resources */,
 				8ACD537B143F2E1300900A3F /* CellView.xib in Resources */,
 				8A4DE3CD1440678700892BB9 /* 53-house.png in Resources */,
+				8A1FE83C1440DDC400D91805 /* RideListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +405,8 @@
 				8A1FE8311440D89E00D91805 /* CDataScanner.m in Sources */,
 				8A1FE8361440D8E700D91805 /* CDataScanner_Extensions.m in Sources */,
 				8A1FE8371440D8E700D91805 /* NSDictionary_JSONExtensions.m in Sources */,
+				8A1FE83B1440DDC400D91805 /* RideListViewController.m in Sources */,
+				8A1FE83F1440E0C200D91805 /* Ride.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

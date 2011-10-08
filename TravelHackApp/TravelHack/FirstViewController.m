@@ -135,8 +135,12 @@
     
     }
     
+       
+    RideListViewController *rideListViewController = [[RideListViewController alloc] initWithNibName:@"RideListViewController" bundle:nil];
+    rideListViewController.rideDictionary = dictionary;
     
-    NSLog([dictionary description]);
+    [self.navigationController pushViewController:rideListViewController animated:YES];
+    
     
 }
 

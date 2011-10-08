@@ -11,6 +11,7 @@
 #import "THTrip.h"
 #import "ASIHTTPRequest.h"
 #import "CJSONDeserializer.h"
+#import "RideListViewController.h"
 
 @interface FirstViewController : UIViewController <ASIHTTPRequestDelegate>
 {
