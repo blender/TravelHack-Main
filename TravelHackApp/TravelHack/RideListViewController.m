@@ -139,6 +139,7 @@
         [btn setTitle:@"Create ride anyway" forState:UIControlStateSelected];
         [btn addTarget:self action:@selector(createRide:) forControlEvents:UIControlEventTouchUpInside];
         [cell.contentView addSubview:btn];
+        cell.accessoryType = UITableViewCellAccessoryNone;
     
     
     }

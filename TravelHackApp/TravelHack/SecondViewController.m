@@ -48,6 +48,8 @@
     isInitialLocationSet = NO;
     mapView.delegate = self;
     
+    [self centerOnLocation:mapView.userLocation];
+    
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"74-location.png"] style:UIBarButtonItemStyleDone target:self action:@selector(centerOnUserLocation)];
     self.navigationItem.rightBarButtonItem = rightButton;
     
@@ -142,7 +144,7 @@
 
     switch (self.senderTag) {
         case 1:
-            trip.fromString = [NSString stringWithFormat:@"%@ %@", dropPin.title, dropPin.subtitle];
+            trip.fromString = [NSString stringWithFormat:@"%@ %@", dropPin.title, dropPin.subtitle != nil ? dropPin.subtitle : @""];
             trip.fromCoordinates = locCoord;
             break;
         case 2:
