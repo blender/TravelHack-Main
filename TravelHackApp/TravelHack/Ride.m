@@ -10,7 +10,7 @@
 
 @implementation Ride
 
-@synthesize exptime, rideid, routeid, fromlat, fromlang, fromtime, tolat, tolang, totime, confirmed, rideName, passengerNo, toName, fromName;
+@synthesize exptime, rideid, routeid, fromlat, fromlang, fromtime, tolat, tolang, totime, confirmed, rideName, passengerNo, toName, fromName, co2;
 
 
 +(Ride *) rideWithDictionary:(NSDictionary *) theDic{
@@ -40,6 +40,7 @@
         self.passengerNo = [[theDic objectForKey:@"passengerno"] intValue];
         self.toName = [theDic objectForKey:@"toname"];
         self.fromName = [theDic objectForKey:@"fromname"];
+        self.co2 = [[theDic objectForKey:@"co2"] floatValue];
         
     }
     

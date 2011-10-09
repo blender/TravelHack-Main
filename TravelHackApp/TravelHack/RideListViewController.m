@@ -124,7 +124,7 @@
         NSString *fromName = [[self.rideArray objectAtIndex:[indexPath row]] fromName];
         
         cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@", fromName, toName];
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"There are %d passengers", [[self.rideArray objectAtIndex:[indexPath row]] passengerNo]];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%d passengers, save %.1fg co2!", [[self.rideArray objectAtIndex:[indexPath row]] passengerNo], ([[self.rideArray objectAtIndex:[indexPath row]] co2]/[[self.rideArray objectAtIndex:[indexPath row]] passengerNo] - [[self.rideArray objectAtIndex:[indexPath row]] co2]/([[self.rideArray objectAtIndex:[indexPath row]] passengerNo]+1)) ];
         
         cell.imageView.image = [UIImage imageNamed:@"car.png"];
         cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;

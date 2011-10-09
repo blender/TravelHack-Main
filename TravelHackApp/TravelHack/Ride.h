@@ -28,5 +28,6 @@
 @property (assign, nonatomic) unsigned int passengerNo;
 @property (strong, nonatomic) NSString *toName;
 @property (strong, nonatomic) NSString *fromName;
+@property (assign, nonatomic) float co2;
 
 @end

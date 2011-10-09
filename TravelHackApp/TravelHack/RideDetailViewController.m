@@ -42,7 +42,7 @@
     self.fromLabel.text = ride.fromName;
     self.toLabel.text = ride.toName;
     self.passengerNoLabel.text = [NSString stringWithFormat:@"%d", ride.passengerNo];
-    self.co2Label.text = [NSString stringWithFormat:@"%.2fg", 2.5];
+    self.co2Label.text = [NSString stringWithFormat:@"%.2fg", ride.co2/((ride.passengerNo != 0) ? ride.passengerNo : 1)];
     self.priceLabel.text = @"3";
     self.title = @"Ride Details";
     // Do any additional setup after loading the view from its nib.
