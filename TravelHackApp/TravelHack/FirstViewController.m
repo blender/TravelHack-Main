@@ -14,6 +14,7 @@
 @synthesize toButton = _toButton;
 @synthesize switchButton = _swithButton;
 @synthesize whenTableView = _whenTableView;
+@synthesize toFromView;
 //@synthesize mapViewController = _mapViewController;
 
 
@@ -46,6 +47,9 @@
     self.title = @"Find me a ride";
     self.navigationItem.backBarButtonItem =[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"53-house.png"] style:UIBarButtonItemStyleBordered target:nil action:nil];
     self.whenTableView.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bluePattern.png"]];
+    self.toFromView.backgroundColor = [UIColor clearColor]; 
+    [self.switchButton setBackgroundImage:nil forState:UIControlStateNormal];
 }
 
 -(void) viewWillAppear:(BOOL)animated{
@@ -59,6 +63,12 @@
         self.toButton.titleLabel.text = trip.toString;
     }
 
+
+}
+
+-(void) viewDidAppear:(BOOL)animated{
+
+    [self.navigationController setToolbarHidden:YES];
 
 }
 
@@ -96,7 +106,7 @@
             break;
     }
 
-    [self.navigationController pushViewController:mapViewController animated:YES];
+    [self.navigationController pushViewController:mapViewController animated:NO];
 }
 
 -(IBAction)switchLocations:(id)sender
@@ -109,7 +119,7 @@
 - (IBAction)grabURLInBackground:(id)sender
 {
    
-    NSString *urlString = [NSString stringWithFormat:@"http://aliavi.com/proc.php?form=searchride&fromlang=%f&fromlat=%f&fdate=14&fhour=12&fmin=12&&tolang=%f&tolat=%f&&tdate=14&thour=12&tmin=12&output=json", trip.fromCoordinates.longitude, trip.fromCoordinates.latitude, trip.toCoordinates.longitude, trip.toCoordinates.latitude];
+    NSString *urlString = [NSString stringWithFormat:@"http://aliavi.com/proc.php?form=searchride&fromlang=%f&fromlat=%f&fdate=14&fhour=12&fmin=12&tolang=%f&tolat=%f&tdate=14&thour=12&tmin=12&output=json", trip.fromCoordinates.longitude, trip.fromCoordinates.latitude, trip.toCoordinates.longitude, trip.toCoordinates.latitude];
     
     //NSLog(urlString);
     
@@ -118,6 +128,8 @@
     [request setDelegate:self];
     [request startAsynchronous];
 }
+
+#pragma mark - ASIHTTPRequest Delegate
 
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
@@ -140,6 +152,7 @@
     rideListViewController.rideDictionary = dictionary;
     
     [self.navigationController pushViewController:rideListViewController animated:YES];
+    [self.navigationController setToolbarHidden:YES];
     
     
 }

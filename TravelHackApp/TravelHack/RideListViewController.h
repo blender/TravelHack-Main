@@ -8,13 +8,22 @@
 
 #import <UIKit/UIKit.h>
 #import "Ride.h"
+#import "RideDetailViewController.h"
+#import "ASIHTTPRequest.h"
+#import "THTrip.h"
 
-@interface RideListViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+@interface RideListViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate, ASIHTTPRequestDelegate>
 {
     
-    NSMutableArray *rideArray;
+    NSMutableArray *_rideArray;
     
 }
 
+- (IBAction)grabURLInBackground:(id)sender;
+
 @property (strong, nonatomic) NSDictionary *rideDictionary;
+@property (strong, nonatomic) NSMutableArray *rideArray;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) THTrip *myTrip;
+-(void) createRide:(id) sender;
 @end

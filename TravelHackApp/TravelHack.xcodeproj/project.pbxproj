@@ -17,6 +17,15 @@
 		8A1FE83B1440DDC400D91805 /* RideListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE8391440DDC400D91805 /* RideListViewController.m */; };
 		8A1FE83C1440DDC400D91805 /* RideListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FE83A1440DDC400D91805 /* RideListViewController.xib */; };
 		8A1FE83F1440E0C200D91805 /* Ride.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE83E1440E0C200D91805 /* Ride.m */; };
+		8A1FE845144107CE00D91805 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FE844144107CE00D91805 /* car.png */; };
+		8A1FE8471441130D00D91805 /* greenPattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FE8461441130D00D91805 /* greenPattern.png */; };
+		8A1FE849144114A700D91805 /* bluePattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FE848144114A700D91805 /* bluePattern.png */; };
+		8A1FE85114411B9800D91805 /* toFromBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FE85014411B9800D91805 /* toFromBG.png */; };
+		8A1FE85314411E8100D91805 /* switch.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FE85214411E8100D91805 /* switch.png */; };
+		8A1FE8571441240700D91805 /* RideDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE8551441240600D91805 /* RideDetailViewController.m */; };
+		8A1FE8581441240700D91805 /* RideDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FE8561441240700D91805 /* RideDetailViewController.xib */; };
+		8A1FE85A1441283500D91805 /* cash.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FE8591441283500D91805 /* cash.png */; };
+		8A1FE85C1441296E00D91805 /* users.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FE85B1441296E00D91805 /* users.png */; };
 		8A4DE3CD1440678700892BB9 /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4DE3CC1440678700892BB9 /* 53-house.png */; };
 		8A577BA81440C82300527FEF /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A577B991440C82300527FEF /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8A577BA91440C82300527FEF /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A577B9C1440C82300527FEF /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -73,6 +82,16 @@
 		8A1FE83A1440DDC400D91805 /* RideListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RideListViewController.xib; sourceTree = "<group>"; };
 		8A1FE83D1440E0C200D91805 /* Ride.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ride.h; sourceTree = "<group>"; };
 		8A1FE83E1440E0C200D91805 /* Ride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ride.m; sourceTree = "<group>"; };
+		8A1FE844144107CE00D91805 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		8A1FE8461441130D00D91805 /* greenPattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenPattern.png; sourceTree = "<group>"; };
+		8A1FE848144114A700D91805 /* bluePattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluePattern.png; sourceTree = "<group>"; };
+		8A1FE85014411B9800D91805 /* toFromBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toFromBG.png; sourceTree = "<group>"; };
+		8A1FE85214411E8100D91805 /* switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch.png; sourceTree = "<group>"; };
+		8A1FE8541441240600D91805 /* RideDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RideDetailViewController.h; sourceTree = "<group>"; };
+		8A1FE8551441240600D91805 /* RideDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RideDetailViewController.m; sourceTree = "<group>"; };
+		8A1FE8561441240700D91805 /* RideDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RideDetailViewController.xib; sourceTree = "<group>"; };
+		8A1FE8591441283500D91805 /* cash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cash.png; sourceTree = "<group>"; };
+		8A1FE85B1441296E00D91805 /* users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = users.png; sourceTree = "<group>"; };
 		8A4DE3CC1440678700892BB9 /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
 		8A577B981440C82300527FEF /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = TravelHack/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		8A577B991440C82300527FEF /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = TravelHack/ASIAuthenticationDialog.m; sourceTree = "<group>"; };
@@ -211,6 +230,13 @@
 		8ACD5374143F077B00900A3F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8A1FE85B1441296E00D91805 /* users.png */,
+				8A1FE8591441283500D91805 /* cash.png */,
+				8A1FE85214411E8100D91805 /* switch.png */,
+				8A1FE85014411B9800D91805 /* toFromBG.png */,
+				8A1FE848144114A700D91805 /* bluePattern.png */,
+				8A1FE8461441130D00D91805 /* greenPattern.png */,
+				8A1FE844144107CE00D91805 /* car.png */,
 				8A4DE3CC1440678700892BB9 /* 53-house.png */,
 				8AE8C023143A3D9800133593 /* 74-location.png */,
 				8AD6EC03143C8A1400DA3084 /* 03-loopback_v.png */,
@@ -221,6 +247,7 @@
 		8ACD5375143F078A00900A3F /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				8A1FE8561441240700D91805 /* RideDetailViewController.xib */,
 				8AE8C017143A147A00133593 /* FirstViewController.xib */,
 				8A1FE83A1440DDC400D91805 /* RideListViewController.xib */,
 				8AE8C020143A3BEF00133593 /* SecondViewController.xib */,
@@ -272,6 +299,8 @@
 				8AE8C025143A3D9C00133593 /* Assets */,
 				8A06B38F14404F9200666433 /* FirstViewController.h */,
 				8A06B39014404F9200666433 /* FirstViewController.m */,
+				8A1FE8541441240600D91805 /* RideDetailViewController.h */,
+				8A1FE8551441240600D91805 /* RideDetailViewController.m */,
 				8AE8BFDC143A0BDA00133593 /* THAppDelegate.h */,
 				8AE8BFDD143A0BDA00133593 /* THAppDelegate.m */,
 				8AE8C01E143A3BEF00133593 /* SecondViewController.h */,
@@ -372,6 +401,14 @@
 				8ACD537B143F2E1300900A3F /* CellView.xib in Resources */,
 				8A4DE3CD1440678700892BB9 /* 53-house.png in Resources */,
 				8A1FE83C1440DDC400D91805 /* RideListViewController.xib in Resources */,
+				8A1FE845144107CE00D91805 /* car.png in Resources */,
+				8A1FE8471441130D00D91805 /* greenPattern.png in Resources */,
+				8A1FE849144114A700D91805 /* bluePattern.png in Resources */,
+				8A1FE85114411B9800D91805 /* toFromBG.png in Resources */,
+				8A1FE85314411E8100D91805 /* switch.png in Resources */,
+				8A1FE8581441240700D91805 /* RideDetailViewController.xib in Resources */,
+				8A1FE85A1441283500D91805 /* cash.png in Resources */,
+				8A1FE85C1441296E00D91805 /* users.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +444,7 @@
 				8A1FE8371440D8E700D91805 /* NSDictionary_JSONExtensions.m in Sources */,
 				8A1FE83B1440DDC400D91805 /* RideListViewController.m in Sources */,
 				8A1FE83F1440E0C200D91805 /* Ride.m in Sources */,
+				8A1FE8571441240700D91805 /* RideDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

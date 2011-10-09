@@ -26,6 +26,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *toButton;
 @property (strong, nonatomic) IBOutlet UIButton *switchButton;
 @property (strong, nonatomic) IBOutlet UITableView *whenTableView;
+@property (strong, nonatomic) IBOutlet UIView *toFromView;
 
 -(IBAction) triggerMap:(id) sender;
 -(IBAction) switchLocations:(id)sender;

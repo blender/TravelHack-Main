@@ -26,5 +26,7 @@
 @property (assign, nonatomic) BOOL confirmed;
 @property (strong, nonatomic) NSString *rideName;
 @property (assign, nonatomic) unsigned int passengerNo;
+@property (strong, nonatomic) NSString *toName;
+@property (strong, nonatomic) NSString *fromName;
 
 @end

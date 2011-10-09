@@ -187,7 +187,7 @@
 
 - (void)reverseGeocoder:(MKReverseGeocoder *)geocoder didFindPlacemark:(MKPlacemark *)placemark
 {
-	NSLog(@"The geocoder has returned: %@", [placemark addressDictionary]);
+	//NSLog(@"The geocoder has returned: %@", [placemark addressDictionary]);
     
     dropPin.title = [[placemark addressDictionary] objectForKey:@"Thoroughfare"];
     dropPin.subtitle = [[placemark addressDictionary] objectForKey:@"SubThoroughfare"];
