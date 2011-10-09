@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A06B39114404F9200666433 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A06B39014404F9200666433 /* FirstViewController.m */; };
+		8A1BAC4314414F6300D3D0BE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A1BAC4214414F6300D3D0BE /* Icon.png */; };
 		8A1FE82C1440D79A00D91805 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE8261440D79A00D91805 /* CJSONDeserializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8A1FE82D1440D79A00D91805 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE8281440D79A00D91805 /* CJSONScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8A1FE82E1440D79A00D91805 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1FE82A1440D79A00D91805 /* CJSONSerializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -64,6 +65,7 @@
 /* Begin PBXFileReference section */
 		8A06B38F14404F9200666433 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		8A06B39014404F9200666433 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		8A1BAC4214414F6300D3D0BE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		8A1FE8251440D79A00D91805 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
 		8A1FE8261440D79A00D91805 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
 		8A1FE8271440D79A00D91805 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 		8ACD5374143F077B00900A3F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8A1BAC4214414F6300D3D0BE /* Icon.png */,
 				8A1FE85B1441296E00D91805 /* users.png */,
 				8A1FE8591441283500D91805 /* cash.png */,
 				8A1FE85214411E8100D91805 /* switch.png */,
@@ -409,6 +412,7 @@
 				8A1FE8581441240700D91805 /* RideDetailViewController.xib in Resources */,
 				8A1FE85A1441283500D91805 /* cash.png in Resources */,
 				8A1FE85C1441296E00D91805 /* users.png in Resources */,
+				8A1BAC4314414F6300D3D0BE /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -165,13 +165,13 @@
     [request startAsynchronous];
 }
 
+#pragma mark - ASIHTTPRequest Delegates
+
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
     // Use when fetching text data
-    NSString *responseString = [request responseString];
-    
-    // Use when fetching binary data
-    NSData *responseData = [request responseData];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ride Created!" message:@"Thank you, we'll keep you posted." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)requestFailed:(ASIHTTPRequest *)request
@@ -202,6 +202,17 @@
     rideDetailViewController.ride = [_rideArray objectAtIndex:[indexPath row]];
     [self.navigationController pushViewController:rideDetailViewController animated:YES];
     [self.navigationController setToolbarHidden:YES];
+
+}
+
+#pragma mark - AlertView Delegates
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+
+    if(buttonIndex == 0){
+    
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 
 }
 

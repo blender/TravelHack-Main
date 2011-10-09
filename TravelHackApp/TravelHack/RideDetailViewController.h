@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "Ride.h"
+#import "ASIHTTPRequest.h"
 
 
-@interface RideDetailViewController : UIViewController
+@interface RideDetailViewController : UIViewController <ASIHTTPRequestDelegate, UIAlertViewDelegate>
 
+
+-(IBAction) joinRide:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UILabel *fromLabel;
 @property (strong, nonatomic) IBOutlet UILabel *toLabel;

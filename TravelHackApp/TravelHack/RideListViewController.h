@@ -12,7 +12,7 @@
 #import "ASIHTTPRequest.h"
 #import "THTrip.h"
 
-@interface RideListViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate, ASIHTTPRequestDelegate>
+@interface RideListViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate, ASIHTTPRequestDelegate, UIAlertViewDelegate>
 {
     
     NSMutableArray *_rideArray;

@@ -60,4 +60,46 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+
+#pragma mark - Instance Methods
+
+
+-(IBAction)joinRide:(id)sender{
+    
+    NSString *requestString = [NSString stringWithFormat:@"http://aliavi.com/proc.php?form=joinride&rideid=%d", ride.rideid];
+    NSLog(@"URL STRING: %@", [requestString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]);
+    NSURL *requestUrl = [NSURL URLWithString:[requestString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:requestUrl];
+    [request setDelegate:self];
+    [request startAsynchronous];
+}
+
+#pragma mark - ASIHTTPRequest Delegates
+
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
+    // Use when fetching text data
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You joined this ride!" message:@"Thank you, we'll keep you posted." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+
+- (void)requestFailed:(ASIHTTPRequest *)request
+{
+    NSError *error = [request error];
+    
+    NSLog([error description]);
+}
+
+#pragma mark - AlertView Delegates
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+    if(buttonIndex == 0){
+        
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
+    
+}
+
+
 @end
