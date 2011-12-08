@@ -4,17 +4,17 @@
    version = "1.0">
    <FileBreakpoints>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "TravelHack/FirstViewController.m"
-         timestampString = "339787306.096478"
+         filePath = "TravelHack/Ride.m"
+         timestampString = "339802442.145396"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "125"
-         endingLineNumber = "125"
-         landmarkName = "-requestFinished:"
+         startingLineNumber = "30"
+         endingLineNumber = "30"
+         landmarkName = "-initWithDictionary:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

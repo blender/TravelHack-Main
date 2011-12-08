@@ -3,10 +3,24 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[FirstViewController requestFinished:]:FirstViewController.m">
+      </ContextState>
+      <ContextState
          contextName = "-[SecondViewController reverseGeocoder:didFindPlacemark:]:SecondViewController.m">
          <PersistentStrings>
             <PersistentString
                value = "(NSString)(((&apos;SecondViewController&apos; *) (self)))-&gt;dropPin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Ride initWithDictionary:]:Ride.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(NSObject)theDic">
+            </PersistentString>
+            <PersistentString
+               value = "theDic.exptime">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

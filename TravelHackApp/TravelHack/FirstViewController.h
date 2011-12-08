@@ -10,6 +10,8 @@
 #import "SecondViewController.h"
 #import "THTrip.h"
 #import "ASIHTTPRequest.h"
+#import "CJSONDeserializer.h"
+#import "RideListViewController.h"
 
 @interface FirstViewController : UIViewController <ASIHTTPRequestDelegate>
 {
@@ -24,6 +26,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *toButton;
 @property (strong, nonatomic) IBOutlet UIButton *switchButton;
 @property (strong, nonatomic) IBOutlet UITableView *whenTableView;
+@property (strong, nonatomic) IBOutlet UIView *toFromView;
 
 -(IBAction) triggerMap:(id) sender;
 -(IBAction) switchLocations:(id)sender;

@@ -43,19 +43,20 @@
     
     _leftLabelForCell = [[UILabel alloc] initWithFrame:CGRectMake(cell.indentationWidth+2, cell.contentView.frame.size.height/2-10, 100, 20)];
     _leftLabelForCell.font = [UIFont fontWithName:@"Helvetica-Bold" size:15];
+    _leftLabelForCell.backgroundColor = [UIColor clearColor];
     
     switch (row) {
         case 0:
             _leftLabelForCell.text = @"Date";
-            cell.textLabel.text = @"Today";
+            //cell.textLabel.text = @"Today";
             break;
         case 1:
             _leftLabelForCell.text = @"Time";
-            cell.textLabel.text = @"Now";
+            //cell.textLabel.text = @"Now";
             break;
         case 2:
             _leftLabelForCell.text = @"Passengers";
-            cell.textLabel.text = @"1";
+            //cell.textLabel.text = @"1";
             break;
             
         default:
